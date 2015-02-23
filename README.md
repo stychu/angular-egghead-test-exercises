@@ -25,4 +25,8 @@ Test  **change** directive which updates the information about the **person** on
 ###Before you start, please refer to:
 * [angularjs-unit-testing-directive-scope-binding](https://egghead.io/lessons/angularjs-unit-testing-directive-scope-binding)
 
+Extra tips for testing:
+* [angularjs-testing-underscores](https://egghead.io/lessons/angularjs-testing-underscores)
+* [angularjs-speed-testing-with-webstorm-and-jasmine](https://egghead.io/lessons/angularjs-speed-testing-with-webstorm-and-jasmine)
+
 Good luck!
