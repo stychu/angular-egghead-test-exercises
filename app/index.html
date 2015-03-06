@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="weatherApp">
 <head lang="en">
     <title>AngularJS Tutorials</title>
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body ng-app="shoes-views">
-<div class="container">
-    <!-- add view to each row-->
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
+<body>
+<div class="container" ng-controller="WeatherCtrl">
+    <div class="page-header">
+        <h1>BBC Weather</h1>
+    </div>
+    <table id="weatherTable" class="table table-bordered">
+        <thead>
+        <tr>
+            <th>City</th>
+            <th>Temperature</th>
+            <th>Describe</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="w in weatherForecast">
+            <td>{{w.city}}</td>
+            <td>{{w.temperature}}</td>
+            <td>{{w.describe}}</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
-<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="women/women.js"></script>
-<script type="text/javascript" src="men/men.js"></script>
+
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="weather.js"></script>
 
 </body>
 </html>

@@ -1,46 +1,24 @@
-##Exercise 56: ui-router Named Views
-ui-router library is useful for dividing up your application into sections, and changing the content of a section based on the current state.
-Use ui-router which provides the ability to name views within in shoes shop. Application has three tabs: Home, Men, Women. 
+##Exercise 57: Getting Started With Protractor
+Protractor is an end-to-end testing library for AngularJS. After installing the necessary components (see at **Test Configuration**)
+try to write a simple test to display correct page title 
 
 ###Requirements
-* complete **app.js** file with stateProvider configuration 
-    * create **app** state 
-    * add templates from **common** folder to views property
-* add states to home view - index.html(see result 1)
-* create **men** state which 
-    * should change **content** view with new content that displays men's shoes (new content requires controller)
-    * should "remove" footer view (add empty footer property)
-* add new state to **mainbar** navigation
-*  create **women** state which
-    * should change **content** with new content that displays types of shoes, 
-    * should change **header** view with new that displays red high heels, 
-    * should "remove" footer view
-    * should have **subcontent** view, which enables to change data in **content**
-* use **app.women.flats** and **app.women.pumps** states to change **subcontent** in **women.content** 
+* instead of ``` protractor.getInstance()``` use simple ```browser``` (example: ```browser.get()```)
 
-###Result
-1) home view with header, mainbar, content, footer
+### Test Configuration:
+* ```npm install -g protractor```
+* ```webdriver-manager update```
+* ```npm install -g httpster```
+* ```bower install```
 
-![alt text](app/assets/1.jpg)
+Test start
+* you need two terminal windows:
+    * in the first go to the app folder ```cd app``` and run ```httpster``` command
+    *  in the second terminal window run tests with ```protractor test/protractor.conf.js```
 
-2) men's shoes
-
-![alt text](app/assets/2.jpg)
-
-3) types of women's shoes
-
-![alt text](app/assets/3.jpg)
-
-4) flats shoes
-
-![alt text](app/assets/4.jpg)
-
-5) pumps shoes
-
-![alt text](app/assets/5.jpg)
 
 ###Before you start:
-* [angularjs-ui-router-named-views](https://egghead.io/lessons/angularjs-ui-router-named-views)
-* run ```bower install``` command and add **angular-ui-router** to **index.html** and **ui-router** dependency to application
+* [angularjs-getting-started-with-protractor](https://egghead.io/lessons/angularjs-getting-started-with-protractor)
+* [protractor](http://angular.github.io/protractor/#/)
 
 Good luck!
