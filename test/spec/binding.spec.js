@@ -1,4 +1,5 @@
-describe("binding", function ()
+'use strict';
+describe('binding', function ()
 {
     var text;
     var operation;
