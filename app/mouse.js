@@ -1,18 +1,19 @@
-var myApp = angular.module("myApp", []);
+'use strict';
 
-myApp.directive("clickOn", function ()
+var myApp = angular.module('myApp', []);
+
+myApp.directive('clickOn', function ()
 {
     return function (scope, element, attrs)
     {
         element.addClass(attrs.clickOn);
-
-    }
+    };
 });
 
-myApp.directive("enter", function ()
+myApp.directive('enter', function ()
 {
     return function (scope, element, attrs)
     {
-        element.addClass("bg-danger");
-    }
+        element.addClass('bg-danger');
+    };
 });
