@@ -1,11 +1,9 @@
-var shopApp = angular.module("shopApp", []);
+'use strict';
+var shopApp = angular.module('shopApp', []);
 
-shopApp.controller("ShopCtrl", function ()
+shopApp.controller('ShopCtrl', function ()
 {
-    this.sweets = [
-        {name: 'Starburst'},
-        {name: 'Nerds'}
-    ];
+    this.sweets = [{name: 'Starburst'}, {name: 'Nerds'}];
     this.cart = [];
 
     this.addSweets = function (sweet)
@@ -22,5 +20,5 @@ shopApp.controller("ShopCtrl", function ()
         } else {
             return false;
         }
-    }
+    };
 });
