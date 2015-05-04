@@ -1,4 +1,6 @@
-describe("weatherApp", function ()
+'use strict';
+
+describe('weatherApp', function ()
 {
 
 });
