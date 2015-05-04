@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('controllers').controller('CartCtrl', ['$scope', function ($scope)
 {
     $scope.addToCart = function (product)
@@ -17,6 +19,6 @@ angular.module('controllers').controller('CartCtrl', ['$scope', function ($scope
         $scope.updateProductList(product, false);
         $scope.cart.splice(index, 1);
 
-    }
+    };
 
 }]);
