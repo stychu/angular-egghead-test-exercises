@@ -1,4 +1,4 @@
-'use stri'
+'use strict'
 var myFilter = angular.module('myFilter', []);
 
 myFilter.filter('quote', function ()
