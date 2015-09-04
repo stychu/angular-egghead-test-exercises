@@ -4,6 +4,8 @@ describe("directives", function ()
     var square;
     var $scope;
 
+    beforeEach(module('myApp'));
+
     beforeEach(inject(function ($compile, $rootScope)
     {
         $scope = $rootScope;
@@ -14,6 +16,16 @@ describe("directives", function ()
     }));
 
     <!-- click-on directive test-->
-    <!-- enter directive test-->
+    describe('clickOn', function () {
+        it('Should add a class of bg-info', function () {
+            expect(square.hasClass('bg-info')).toBe(true);
+        })
+    });
+    describe('enter', function () {
+        it('Should add a class of bg-danger', function () {
+            expect(circle.hasClass('bg-danger')).toBe(true);
+        })
+    });
+
 
 });
