@@ -21,6 +21,6 @@ myApp.service('CalculatorService', function ()
 
     this.division = function (a, b)
     {
-        return 0 !== b ? a / b : false;
+        return (0 !== b && 0 !== a) ? a / b : false;
     };
 });
